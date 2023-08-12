@@ -1,0 +1,34 @@
+// src/components/Footer.scss
+@use "../../sass/colors";
+
+.footer {
+    background-color: #000000 ;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer__content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer__link-item {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .footer__link-item a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer__link-item a:hover {
+    text-decoration: underline;
+  }
+  
