@@ -6,7 +6,7 @@ import vision2 from "../../assets/images/vision2.jpg"
 
 const OurVision = () => {
   return (
-    <section className="our-vision">
+    <section id="OURVISION" className="our-vision">
       <div className="our-vision__item1">
         <div className="our-vision__icon">
           <img

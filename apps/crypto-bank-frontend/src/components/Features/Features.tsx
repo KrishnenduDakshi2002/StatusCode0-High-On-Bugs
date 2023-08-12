@@ -7,46 +7,45 @@ import Icon from '../../icons/Icon'
 const Features = () => {
   const featuresList = [
     {
-      icon: "path-to-feature-icon-1.png", // Replace with the actual icon path
+      icon: "path-to-feature-icon-1.png", 
       title: "Feature 1",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
     },
     {
-      icon: "path-to-feature-icon-2.png", // Replace with the actual icon path
+      icon: "path-to-feature-icon-2.png",  
       title: "Feature 2",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
     },
     {
-      icon: "path-to-feature-icon-2.png", // Replace with the actual icon path
+      icon: "path-to-feature-icon-2.png",  
       title: "Feature 2",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
     },
     {
-      icon: "path-to-feature-icon-2.png", // Replace with the actual icon path
+      icon: "path-to-feature-icon-2.png",  
       title: "Feature 2",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
     },
     {
-      icon: "path-to-feature-icon-2.png", // Replace with the actual icon path
+      icon: "path-to-feature-icon-2.png",  
       title: "Feature 2",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
     },
     {
-      icon: "path-to-feature-icon-2.png", // Replace with the actual icon path
+      icon: "path-to-feature-icon-2.png",  
       title: "Feature 2",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     }, 
-    // Add more features as needed
   ];
 
   return (
-    <section className="features">
+    <section id='FEATURES' className="features">
       <h2 className="features__heading">Features</h2>
       <ul className="features__list">
         {featuresList.map((feature, index) => (

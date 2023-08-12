@@ -9,10 +9,11 @@ const Navbar = () => {
       </div>
       <div className="navbar__center">
         <ul className="navbar__list">
-          <li className="navbar__item">Home</li>
-          <li className="navbar__item">Our Vision</li>
-          <li className="navbar__item">Features</li>
-          <li className="navbar__item">Team</li>
+          <li className="navbar__item"><a href='#HOME'>Home</a></li>
+          <li className="navbar__item"><a href='#OURVISION'>Our Vision</a></li>
+          <li className="navbar__item"><a href='#FEATURES'>Features</a></li>
+          <li className="navbar__item"><a href='#TEAM'>Team</a></li>
+          <li className="navbar__item"><a href='#ABOUT'>About</a></li>
         </ul>
       </div>
       {/* <div className="navbar__right">
