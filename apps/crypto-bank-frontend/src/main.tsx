@@ -2,6 +2,7 @@ import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
 
 import App from './app/app';
+import './styles.css';
 import { Auth0Provider } from '@auth0/auth0-react';
 
 import { BrowserRouter } from 'react-router-dom';
