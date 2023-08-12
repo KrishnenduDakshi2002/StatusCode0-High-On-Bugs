@@ -1,0 +1,59 @@
+@use "../../sass/colors";
+
+.navbar {
+  // background-color: #333;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  background-color: colors.$bg-primary-1;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  padding: 0 1rem 0 1rem;
+}
+
+.navbar__logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar__list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar__item {
+  margin: 0 15px;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #ff5733;
+  }
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__login {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.navbar__profile {
+  width: 30px;
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
