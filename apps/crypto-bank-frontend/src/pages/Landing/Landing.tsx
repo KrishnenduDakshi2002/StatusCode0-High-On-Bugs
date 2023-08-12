@@ -11,14 +11,18 @@ import {
 
 const Landing = () => {
   return (
-    <>
-      <Navbar loggedIn={false} />
+    <div
+      style={{
+        width: '100%',
+      }}
+    >
+      <Navbar />
       <Home />
       <Features />
       <OurVision />
       <Team />
       <Footer />
-    </>
+    </div>
   );
 };
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.scss';
 
-const Navbar = ({ loggedIn }) => {
+const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar__left">
@@ -15,13 +15,13 @@ const Navbar = ({ loggedIn }) => {
           <li className="navbar__item">Team</li>
         </ul>
       </div>
-      <div className="navbar__right">
+      {/* <div className="navbar__right">
         {loggedIn ? (
           <div className="navbar__profile">Profile Icon</div>
         ) : (
           <div className="navbar__login">Login</div>
         )}
-      </div>
+      </div> */}
     </nav>
   );
 };

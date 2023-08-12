@@ -1,13 +1,14 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+import Landing from '../pages/Landing/Landing';
 import styles from './app.module.css';
 
-import NxWelcome from './nx-welcome';
+import './app.scss';
 
 export function App() {
   return (
-    <div>
-      <NxWelcome title="crypto-bank-frontend" />
-    </div>
+    <section>
+      <Landing />
+    </section>
   );
 }
 

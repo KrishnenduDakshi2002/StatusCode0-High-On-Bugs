@@ -1,28 +1,21 @@
+import React from 'react';
+import './Home.scss';
 
-import React from "react";
-import "./Home.scss";
-import landingvideo from "../../assets/FinalLanding1.mp4"
-import { Button, Space } from 'antd';
-
-import backimg from '../../assets/images/backimg2.jpg'
+import backimg from '../../assets/images/backimg2.jpg';
 
 const Home = () => {
   const handleLoginClick = () => {
     // Handle login logic
-    console.log("Log In clicked");
+    console.log('Log In clicked');
   };
 
   const handleSignUpClick = () => {
     // Handle sign up logic
-    console.log("Sign Up clicked");
+    console.log('Sign Up clicked');
   };
 
   return (
     <section className="home">
-      {/* <video className="home__video" autoPlay loop muted>
-        <source src={landingvideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video> */}
       <img className="home__video" src={backimg} alt="what the fuck bro" />
       <div className="home__overlay" />
       <div className="home__content">
@@ -31,10 +24,16 @@ const Home = () => {
           to <strong>PeerLink</strong>
         </h2>
         <div className="home__buttons">
-        <button className="home__button home__button--light-blue" onClick={handleLoginClick}>
+          <button
+            className="home__button home__button--light-blue"
+            onClick={handleLoginClick}
+          >
             Log In
           </button>
-          <button className="home__button home__button--dark-blue" onClick={handleSignUpClick}>
+          <button
+            className="home__button home__button--dark-blue"
+            onClick={handleSignUpClick}
+          >
             Sign Up
           </button>
         </div>
