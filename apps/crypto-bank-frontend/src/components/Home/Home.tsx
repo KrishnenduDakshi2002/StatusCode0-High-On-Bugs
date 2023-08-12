@@ -3,15 +3,21 @@ import './Home.scss';
 
 import backimg from '../../assets/images/backimg2.jpg';
 
+import { useAuth0 } from '@auth0/auth0-react';
+
 const Home = () => {
+  const { loginWithRedirect } = useAuth0();
+
   const handleLoginClick = () => {
     // Handle login logic
     console.log('Log In clicked');
+    loginWithRedirect();
   };
 
   const handleSignUpClick = () => {
     // Handle sign up logic
     console.log('Sign Up clicked');
+    loginWithRedirect();
   };
 
   return (
