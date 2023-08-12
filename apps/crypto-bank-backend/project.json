@@ -1,0 +1,64 @@
+{
+  "name": "crypto-bank-backend",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/crypto-bank-backend/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "target": "node",
+        "compiler": "tsc",
+        "outputPath": "dist/apps/crypto-bank-backend",
+        "main": "apps/crypto-bank-backend/src/main.ts",
+        "tsConfig": "apps/crypto-bank-backend/tsconfig.app.json",
+        "assets": ["apps/crypto-bank-backend/src/assets"],
+        "isolatedConfig": true,
+        "webpackConfig": "apps/crypto-bank-backend/webpack.config.js"
+      },
+      "configurations": {
+        "development": {},
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "crypto-bank-backend:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "crypto-bank-backend:build:development"
+        },
+        "production": {
+          "buildTarget": "crypto-bank-backend:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/crypto-bank-backend/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/crypto-bank-backend/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}
