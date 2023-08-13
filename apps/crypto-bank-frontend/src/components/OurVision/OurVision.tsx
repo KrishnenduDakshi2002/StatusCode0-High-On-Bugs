@@ -21,9 +21,10 @@ const OurVision = () => {
           </div>
           <div className="p-box">
             <p className="our-vision__text">
-              We strive to provide innovative solutions for our customers by
-              delivering high-quality products and excellent service.
-            </p>
+              {/* We strive to provide innovative solutions for our customers by
+              delivering high-quality products and excellent service. */}
+              Introducing a secure solution bridging the $9.63 billion crypto lending and $34.45 billion NFT industries. Our platform ensures minimal risk by adhering to authentication and regulatory standards, creating a confident space for global crypto enthusiasts. Join us in shaping a secure and empowering financial future.
+              </p>
           </div>
         </div>
       </div>
@@ -41,8 +42,7 @@ const OurVision = () => {
             <h3 className="our-vision__title3">Vision</h3>
           </div>
           <p className="our-vision__text">
-            Our vision is to create a positive impact on the community and lead
-            the industry with sustainable and forward-thinking solutions.
+          We aspire to diminish crypto lending risks by linking Aadhar with wallets, ensuring singular accounts. Through meticulous risk assessment, a crypto score system identifies high-risk lenders. Our robust loan pool curtails losses, and we maintain professionalism by blacklisting non-performing assets, redefining safety in crypto lending.
           </p>
         </div>
       </div>

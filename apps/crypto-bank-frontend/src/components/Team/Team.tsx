@@ -3,6 +3,11 @@ import React from 'react';
 import './Team.scss';
 
 import pimg from '../../assets/images/backimg.jpg';
+import kd from '../../assets/images/kd.jpg'
+import dp from '../../assets/images/dp.png'
+import sm from '../../assets/images/sm.jpg'
+import sss from '../../assets/images/sss.png'
+import dj from '../../assets/images/dj.jpg'
 
 interface TeamMember {
   name: string;
@@ -14,9 +19,9 @@ interface TeamMember {
 const Team = () => {
   const teamMembers: TeamMember = [
     {
-      name: 'John Doe',
-      role: 'CEO',
-      profile_image: { pimg },
+      name: 'Krishnendu',
+      role: 'Backend',
+      profile_image: { kd },
       avatar: 'path-to-avatar-1.jpg', // Replace with the actual avatar path
     },
     {
@@ -54,31 +59,31 @@ const Team = () => {
           <div className="row-1-container">
             <div className="team__card" style={{}}>
               <div className="team__card-avatar">
-                <img src={pimg} className="team__avatar-img" />
+                <img src={kd} className="team__avatar-img" />
               </div>
               <div className="team__card-content">
-                <h3 className="team__member-name">Name</h3>
-                <p className="team__member-role">COO</p>
+                <h3 className="team__member-name">Krishnendu</h3>
+                <p className="team__member-role">Backend</p>
               </div>
             </div>
 
             <div className="team__card" style={{}}>
               <div className="team__card-avatar">
-                <img src={pimg} className="team__avatar-img" />
+                <img src={dp} className="team__avatar-img" />
               </div>
               <div className="team__card-content">
-                <h3 className="team__member-name">Name</h3>
-                <p className="team__member-role">COO</p>
+                <h3 className="team__member-name">Debayan</h3>
+                <p className="team__member-role">Backend</p>
               </div>
             </div>
 
             <div className="team__card" style={{}}>
               <div className="team__card-avatar">
-                <img src={pimg} className="team__avatar-img" />
+                <img src={sss} className="team__avatar-img" />
               </div>
               <div className="team__card-content">
-                <h3 className="team__member-name">Name</h3>
-                <p className="team__member-role">COO</p>
+                <h3 className="team__member-name">Sarnavo</h3>
+                <p className="team__member-role">Blockchain</p>
               </div>
             </div>
           </div>
@@ -86,21 +91,21 @@ const Team = () => {
           <div className="row-1-container">
             <div className="team__card" style={{}}>
               <div className="team__card-avatar">
-                <img src={pimg} className="team__avatar-img" />
+                <img src={sm} className="team__avatar-img" />
               </div>
               <div className="team__card-content">
-                <h3 className="team__member-name">Name</h3>
-                <p className="team__member-role">COO</p>
+                <h3 className="team__member-name">Soumyadip</h3>
+                <p className="team__member-role">Frontend</p>
               </div>
             </div>
 
             <div className="team__card" style={{}}>
               <div className="team__card-avatar">
-                <img src={pimg} className="team__avatar-img" />
+                <img src={dj} className="team__avatar-img" />
               </div>
               <div className="team__card-content">
-                <h3 className="team__member-name">Name</h3>
-                <p className="team__member-role">COO</p>
+                <h3 className="team__member-name">Debjani</h3>
+                <p className="team__member-role">Frontend</p>
               </div>
             </div>
           </div>
