@@ -4,14 +4,11 @@ import Piechart from '../../components/Charts/Pie/Piechart';
 import BarChart from '../../components/Charts/Bar/Bar';
 
 import { useNavigate } from 'react-router-dom';
-import { useParams, useLocation } from 'react-router-dom';
-import Com from '../../components/Homepage/Com';
-import PeerCom from '../../components/Homepage/PeerCom';
+import LoanCard from '../LoanCard/LoanCard';
 
-const Home = () => {
+const PeerCom = () => {
   const navigate = useNavigate();
 
-  const { pathname } = useLocation();
   // console.log(pathname);
 
   return (
@@ -60,9 +57,11 @@ const Home = () => {
           />
         </div>
       </div>
-      <Com />
+      <div>
+        <LoanCard />
+      </div>
     </section>
   );
 };
 
-export default Home;
+export default PeerCom;
