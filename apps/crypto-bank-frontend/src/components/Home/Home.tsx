@@ -1,4 +1,4 @@
-import { React, useEffect } from 'react';
+import { useEffect } from 'react';
 import './Home.scss';
 
 import backimg from '../../assets/images/backimg2.jpg';

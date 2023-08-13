@@ -9,6 +9,7 @@ import Connect from '../pages/Wallet/Connect';
 import PeerCom from '../components/Homepage/PeerCom';
 import Aadhar from '../pages/AadharVeri/Aadhar';
 import LoanPool from '../components/Homepage/LoanPool';
+import LoanForm from '../components/Form/LoanForm';
 
 export function App() {
   return (
@@ -21,6 +22,7 @@ export function App() {
         <Route path="/connect" element={<Connect />} />
         <Route path="/loanpool" element={<LoanPool />} />
         <Route path="/aadhar" element={<Aadhar />} />
+        <Route path="/form" element={<LoanForm />} />
       </Routes>
     </section>
   );

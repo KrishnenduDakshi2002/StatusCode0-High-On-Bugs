@@ -1,13 +1,12 @@
 import React from 'react';
 import FeatherIcon from 'feather-icons-react';
-import Piechart from '../../components/Charts/Pie/Piechart';
-import BarChart from '../../components/Charts/Bar/Bar';
 
 import { useNavigate } from 'react-router-dom';
 import LoanCard from '../LoanCard/LoanCard';
 
 import { useAuth0 } from '@auth0/auth0-react';
 import { useDisconnect } from '@thirdweb-dev/react';
+import { Link } from 'react-router-dom';
 
 const PeerCom = () => {
   const navigate = useNavigate();
@@ -77,9 +76,14 @@ const PeerCom = () => {
       </div>
 
       <div className="flex flex-col justify-center items-center w-screen h-screen overflow-hidden ">
-        <button className="bg-primary2 font-poppins text-white py-2 px-2 rounded-lg mt-2">
+        {/* <button className="bg-primary2 font-poppins text-white py-2 px-2 rounded-lg mt-2">
           Apply for loan
-        </button>
+        </button> */}
+        <Link to="/form">
+          <button className="bg-primary2 font-poppins text-white py-2 px-2 rounded-lg mt-2">
+            Apply for Loan
+          </button>
+        </Link>
         <div className="font-poppins text-white font-bold py-3">
           Find the BORROWERS
         </div>
