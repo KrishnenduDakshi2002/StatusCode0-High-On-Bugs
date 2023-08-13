@@ -44,7 +44,7 @@ const Aadhar = () => {
   };
 
   return (
-    <div className="w-screen h-screen bg-primary2 flex justify-center items-center flex-col gap-2">
+    <div className="w-screen h-screen bg-main-bg flex justify-center items-center flex-col gap-2">
       <input
         type="text"
         placeholder="Enter Aadhar number"

@@ -24,7 +24,7 @@ const Connect = () => {
   };
 
   return (
-    <div className="w-screen h-screen bg-primary2 flex justify-center items-center">
+    <div className="w-screen h-screen bg-main-bg flex justify-center items-center">
       <button
         className="text-md font-Poppins text-text2 py-2 px-3 font-bold tracking-tight cursor-pointer border-2 border-primary1 rounded-md bg-primary2 shadow-lg shadow-gray-800"
         onClick={handleconnectwallet}

@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <section id="HOME" className="home">
-      <img className="home__video" src={backimg} alt="what the fuck bro" />
+      <img className="home__video bg-main-bg" alt="what the fuck bro" />
       <div className="home__overlay" />
       <div className="home__content">
         <h2 className="home__heading">

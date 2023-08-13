@@ -27,6 +27,9 @@ module.exports = {
       borderColor: {
         primary1: '#eff2f9',
       },
+      backgroundImage: {
+        'main-bg': "url('/src/assets/images/bg.png')",
+      },
     },
   },
   plugins: [],

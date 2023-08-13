@@ -11,8 +11,8 @@ const Com = () => {
   const address = useAddress();
 
   return (
-    <div className="flex-1 h-full ">
-      <div className="py-2 flex flex-col justify-center items-center h-full w-full bg-primary2">
+    <div className="flex-1 bg-main-bg w-full h-full">
+      <div className="py-2 flex flex-col justify-center items-center h-full w-full">
         <div className="flex flex-col justify-center items-center gap-2 h-[20%] w-full">
           <button className="text-md font-Poppins text-white font-medium tracking-tight cursor-pointer border-2 mt-2 border-gray-800 px-3 py-1 rounded-md max-w-max min-h-max overflow-hidden">
             {address?.slice(0, 5)}........{address?.slice(-5)}
