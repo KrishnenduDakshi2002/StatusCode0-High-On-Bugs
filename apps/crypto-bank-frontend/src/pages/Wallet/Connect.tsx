@@ -4,6 +4,10 @@ import { useConnect, metamaskWallet, useAddress } from '@thirdweb-dev/react';
 
 import { useAsyncError, useNavigate } from 'react-router-dom';
 
+import { useAuth0 } from '@auth0/auth0-react';
+
+import { registerUser } from '../../api/user.auth';
+
 const metamaskConfig = metamaskWallet();
 
 const Connect = () => {
@@ -11,9 +15,29 @@ const Connect = () => {
   const connect = useConnect();
   const address = useAddress();
 
+  const { user, isAuthenticated, isLoading } = useAuth0();
+
+  const regusr = async () => {
+    const data = await registerUser(
+      user?.email,
+      user?.email_verified,
+      user?.name,
+      user?.picture,
+      user?.sub
+    );
+
+    console.log(data);
+  };
+
+  if (isAuthenticated) {
+    console.log(user);
+    regusr();
+  }
+
   useEffect(() => {
     console.log(address);
     if (address) {
+      navigate('/aadhar');
     }
   }, [address]);
 

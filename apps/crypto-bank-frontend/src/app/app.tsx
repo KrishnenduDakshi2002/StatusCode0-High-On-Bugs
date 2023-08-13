@@ -5,10 +5,10 @@ import styles from './app.module.css';
 import { Route, Routes } from 'react-router-dom';
 
 import './app.scss';
-import Peer from '../pages/Peer/Peer';
 import Connect from '../pages/Wallet/Connect';
 import PeerCom from '../components/Homepage/PeerCom';
 import Aadhar from '../pages/AadharVeri/Aadhar';
+import LoanPool from '../components/Homepage/LoanPool';
 
 export function App() {
   return (
@@ -19,6 +19,7 @@ export function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/peer" element={<PeerCom />} />
         <Route path="/connect" element={<Connect />} />
+        <Route path="/loanpool" element={<LoanPool />} />
         <Route path="/aadhar" element={<Aadhar />} />
       </Routes>
     </section>

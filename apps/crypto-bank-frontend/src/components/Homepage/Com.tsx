@@ -16,7 +16,6 @@ const Com = () => {
         <div className="flex flex-col justify-center items-center gap-2 h-[20%] w-full">
           <button className="text-md font-Poppins text-white font-medium tracking-tight cursor-pointer border-2 mt-2 border-gray-800 px-3 py-1 rounded-md max-w-max min-h-max overflow-hidden">
             {address?.slice(0, 5)}........{address?.slice(-5)}
-            {/* {address} */}
           </button>
 
           <div className="text-text1 font-poppins text-xl font-semibold ">
@@ -45,6 +44,9 @@ const Com = () => {
               </button>
               <button
                 className="font-poppins text-lg py-2 px-2 rounded-md w-[150px]"
+                onClick={() => {
+                  navigate('/loanpool');
+                }}
                 style={{
                   borderRadius: '30px',
                   background:

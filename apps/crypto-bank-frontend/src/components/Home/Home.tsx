@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import './Home.scss';
 
 import backimg from '../../assets/images/backimg2.jpg';
@@ -7,6 +7,12 @@ import { useAuth0 } from '@auth0/auth0-react';
 
 const Home = () => {
   const { loginWithRedirect } = useAuth0();
+
+  const { user, isAuthenticated, isLoading } = useAuth0();
+
+  useEffect(() => {
+    console.log(user);
+  }, [user]);
 
   const handleLoginClick = () => {
     // Handle login logic
