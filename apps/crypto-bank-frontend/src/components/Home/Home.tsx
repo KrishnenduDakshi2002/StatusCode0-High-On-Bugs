@@ -21,7 +21,7 @@ const Home = () => {
   };
 
   return (
-    <section className="home">
+    <section id="HOME" className="home">
       <img className="home__video" src={backimg} alt="what the fuck bro" />
       <div className="home__overlay" />
       <div className="home__content">
