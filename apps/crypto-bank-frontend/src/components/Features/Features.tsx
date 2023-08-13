@@ -40,7 +40,7 @@ const Features = () => {
   ];
 
   return (
-    <section id="FEATURES" className="features">
+    <section className="features">
       <h2 className="features__heading">Features</h2>
       <ul className="features__list">
         {featuresList.map((feature, index) => (
