@@ -8,33 +8,33 @@ const Features = () => {
   const featuresList = [
     {
       icon: 'path-to-feature-icon-1.png', // Replace with the actual icon path
-      title: 'Feature 1',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+      title: 'One Person One Account',
+      description: 'We are linking the wallet with Aadhar Card ',
     },
     {
       icon: 'path-to-feature-icon-2.png', // Replace with the actual icon path
-      title: 'Feature 2',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+      title: 'The Crypto Score',
+      description: 'A civil score system but for crypto space',
     },
     {
       icon: 'path-to-feature-icon-2.png', // Replace with the actual icon path
-      title: 'Feature 2',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+      title: 'Risk Assessment',
+      description: 'Know about the risk factors of the potential lenders ',
     },
     {
       icon: 'path-to-feature-icon-2.png', // Replace with the actual icon path
-      title: 'Feature 2',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+      title: 'NFT Colaterals',
+      description: 'Take crypto loan with NFT assets',
     },
     {
       icon: 'path-to-feature-icon-2.png', // Replace with the actual icon path
-      title: 'Feature 2',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+      title: 'Loan Pool',
+      description: 'Safeguard your crypto and reduce your losses by participating in loan pool',
     },
     {
       icon: 'path-to-feature-icon-2.png', // Replace with the actual icon path
-      title: 'Feature 2',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: 'Loan from your connections',
+      description: 'You can connect to facebook and get loan from your friends',
     },
     // Add more features as needed
   ];
