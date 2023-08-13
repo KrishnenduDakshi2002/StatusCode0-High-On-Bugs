@@ -1,15 +1,25 @@
 import React from 'react';
 import FeatherIcon from 'feather-icons-react';
-import Piechart from '../../components/Charts/Pie/Piechart';
-import BarChart from '../../components/Charts/Bar/Bar';
 
 import { useNavigate } from 'react-router-dom';
-import { useParams, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Com from '../../components/Homepage/Com';
 import PeerCom from '../../components/Homepage/PeerCom';
 
+import { useAuth0 } from '@auth0/auth0-react';
+import { useDisconnect } from '@thirdweb-dev/react';
+
 const Home = () => {
   const navigate = useNavigate();
+  const { user, isAuthenticated, isLoading } = useAuth0();
+
+  const { logout } = useAuth0();
+
+  const disconnect = useDisconnect();
+
+  if (isAuthenticated) {
+    console.log(user);
+  }
 
   const { pathname } = useLocation();
   // console.log(pathname);
@@ -51,7 +61,17 @@ const Home = () => {
           />
         </div>
 
-        <div>
+        <div className="gap-2 flex flex-col justify-center items-center cursor-pointer">
+          <FeatherIcon
+            icon="log-out"
+            style={{
+              color: 'white',
+            }}
+            onClick={() => {
+              disconnect();
+              logout({ logoutParams: { returnTo: 'http://localhost:4200' } });
+            }}
+          />
           <FeatherIcon
             icon="moon"
             style={{

@@ -38,7 +38,7 @@ export const data = {
   labels,
   datasets: [
     {
-      label: 'Dataset 1',
+      label: 'Loan Pool Growth',
       data: [65, 59, 80, 81, 56],
       backgroundColor: 'rgba(255, 99, 132, 0.5)',
     },

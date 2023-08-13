@@ -42,17 +42,17 @@ root.render(
       ]}
       supportedChains={[Goerli, Sepolia, Polygon, Ethereum, Mumbai]}
     >
-      <Auth0Provider
-        domain="dev-bhhzavj2blhn2cbe.us.auth0.com"
-        clientId="c9IrUhDIQiojHPdZsw97IAEbI8X7bn7g"
-        authorizationParams={{
-          redirect_uri: window.location.origin,
-        }}
-      >
-        <BrowserRouter>
+      <BrowserRouter>
+        <Auth0Provider
+          domain="dev-bhhzavj2blhn2cbe.us.auth0.com"
+          clientId="KWffFBkqgouKo4Junj97AX1qp6dDVLn1"
+          authorizationParams={{
+            redirect_uri: 'http://localhost:4200/connect',
+          }}
+        >
           <App />
-        </BrowserRouter>
-      </Auth0Provider>
+        </Auth0Provider>
+      </BrowserRouter>
     </ThirdwebProvider>
   </StrictMode>
 );

@@ -8,6 +8,7 @@ import './app.scss';
 import Peer from '../pages/Peer/Peer';
 import Connect from '../pages/Wallet/Connect';
 import PeerCom from '../components/Homepage/PeerCom';
+import Aadhar from '../pages/AadharVeri/Aadhar';
 
 export function App() {
   return (
@@ -18,6 +19,7 @@ export function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/peer" element={<PeerCom />} />
         <Route path="/connect" element={<Connect />} />
+        <Route path="/aadhar" element={<Aadhar />} />
       </Routes>
     </section>
   );

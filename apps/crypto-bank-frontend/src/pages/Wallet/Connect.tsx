@@ -20,7 +20,7 @@ const Connect = () => {
   const handleconnectwallet = async () => {
     const wallet = await connect(metamaskConfig);
     console.log(wallet);
-    navigate('/home');
+    navigate('/aadhar');
   };
 
   return (
