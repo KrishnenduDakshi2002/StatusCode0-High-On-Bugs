@@ -65,6 +65,7 @@
     "@thirdweb-dev/react": "^3.14.31",
     "@thirdweb-dev/sdk": "^3.10.50",
     "@types/faker": "^6.6.9",
+    "antd": "^5.8.3",
     "axios": "^1.0.0",
     "chart.js": "^4.3.3",
     "ethers": "^5.7.2",
@@ -78,6 +79,7 @@
     "react-router-dom": "^6.15.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "web3.storage": "^4.5.5"
   }
 }
