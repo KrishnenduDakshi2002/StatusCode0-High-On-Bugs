@@ -80,6 +80,9 @@ const PeerCom = () => {
         <button className="bg-primary2 font-poppins text-white py-2 px-2 rounded-lg mt-2">
           Apply for loan
         </button>
+        <div className="font-poppins text-white font-bold py-3">
+          Find the BORROWERS
+        </div>
         <div className="w-screen flex flex-wrap justify-start items-center h-full overflow-y-scroll py-2 px-8 bg-primary1 gap-2">
           <LoanCard />
           <LoanCard />

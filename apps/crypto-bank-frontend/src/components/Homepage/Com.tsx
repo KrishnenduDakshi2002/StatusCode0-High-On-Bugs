@@ -11,7 +11,7 @@ const Com = () => {
   const address = useAddress();
 
   return (
-    <div className="flex-1 h-full">
+    <div className="flex-1 h-full ">
       <div className="py-2 flex flex-col justify-center items-center h-full w-full bg-primary2">
         <div className="flex flex-col justify-center items-center gap-2 h-[20%] w-full">
           <button className="text-md font-Poppins text-white font-medium tracking-tight cursor-pointer border-2 mt-2 border-gray-800 px-3 py-1 rounded-md max-w-max min-h-max overflow-hidden">
@@ -19,7 +19,7 @@ const Com = () => {
             {/* {address} */}
           </button>
 
-          <div className="text-text1 font-poppins text-xl font-semibold">
+          <div className="text-text1 font-poppins text-xl font-semibold ">
             Hello Debayan
           </div>
           <div className="font-roboto text-2xl text-text2 font-semibold">
@@ -27,7 +27,7 @@ const Com = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center py-2 px-2 w-full h-[80%]">
+        <div className="flex justify-center gap-2 items-center py-2 px-2 w-full h-[80%]">
           <div className="">
             <div className="flex justify-center gap-2 items-center py-2 px-2 ">
               <button
@@ -55,13 +55,13 @@ const Com = () => {
               </button>
             </div>
             <div className="">
-              <div className="border-2 border-red-400 rounded-md w-full">
+              <div className="border-2 rounded-lg border-red-400 w-full">
                 <Piechart />
               </div>
             </div>
           </div>
 
-          <div className="flex-1 border-2 border-red-500 w-[70%]">
+          <div className="flex-1 border-2 rounded-lg border-red-500 w-[70%]">
             <BarChart />
           </div>
         </div>

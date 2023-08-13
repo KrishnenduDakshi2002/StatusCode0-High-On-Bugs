@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import './Aadhar.scss'; // You can create a CSS file to style the component
 
 import { Web3Storage, getFilesFromPath } from 'web3.storage';
-
+import { useNavigate } from 'react-router-dom';
 const Aadhar = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [uploadStatus, setUploadStatus] = useState('');
+  const navigate = useNavigate();
 
   // const [files, setFiles] = useState(null);
   const [url, setUrl] = useState('');
@@ -34,6 +35,9 @@ const Aadhar = () => {
       setUrl(`https://dweb.link/ipfs/${cid}`);
       setIsUpl(false);
       console.log('stored file with cid:', cid);
+      if (cid) {
+        navigate('/home');
+      }
     } catch (error) {
       console.error('Error storing file:', error);
     }
