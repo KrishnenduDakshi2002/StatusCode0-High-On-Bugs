@@ -29,7 +29,8 @@ const Features = () => {
     {
       icon: 'path-to-feature-icon-2.png', // Replace with the actual icon path
       title: 'Loan Pool',
-      description: 'Safeguard your crypto and reduce your losses by participating in loan pool',
+      description:
+        'Safeguard your crypto and reduce your losses by participating in loan pool',
     },
     {
       icon: 'path-to-feature-icon-2.png', // Replace with the actual icon path
@@ -40,7 +41,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="features">
+    <section id="FEATURES" className="features">
       <h2 className="features__heading">Features</h2>
       <ul className="features__list">
         {featuresList.map((feature, index) => (

@@ -3,11 +3,11 @@ import React from 'react';
 import './Team.scss';
 
 import pimg from '../../assets/images/backimg.jpg';
-import kd from '../../assets/images/kd.jpg'
-import dp from '../../assets/images/dp.png'
-import sm from '../../assets/images/sm.jpg'
-import sss from '../../assets/images/sss.png'
-import dj from '../../assets/images/dj.jpg'
+import kd from '../../assets/images/kd.jpg';
+import dp from '../../assets/images/dp.png';
+import sm from '../../assets/images/sm.jpg';
+import sss from '../../assets/images/sss.png';
+import dj from '../../assets/images/dj.jpg';
 
 interface TeamMember {
   name: string;
@@ -52,7 +52,7 @@ const Team = () => {
   ];
 
   return (
-    <div className="team-container">
+    <div id="TEAM" className="team-container">
       <section className="team">
         <h2 className="team__heading">Our Team</h2>
         <div className="team__grid">
