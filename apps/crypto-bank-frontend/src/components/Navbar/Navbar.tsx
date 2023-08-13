@@ -3,7 +3,7 @@ import './Navbar.scss';
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar backdrop-blur-sm">
       <div className="navbar__left">
         <div className="navbar__logo">Peer Link</div>
       </div>

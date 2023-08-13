@@ -27,7 +27,11 @@ const Home = () => {
       <div className="home__content">
         <h2 className="home__heading">
           <p className="home__heading__welcome">Welcome</p>
-          to <strong>PeerLink</strong>
+          to{' '}
+          <strong>
+            <span className="font-poppins text-text1">Peer</span>
+            <span className="font-poppins text-white">Link</span>
+          </strong>
         </h2>
         <div className="home__buttons">
           <button
